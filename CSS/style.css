@@ -1,14 +1,25 @@
+
+:root{
+    --azul-dnc: #0c7cf2;
+    --preto-dnc:#303030;
+    --cinza-hover: #c9c9c9;
+
+    --font-padrao: 'Inter';
+}
+
 body {
     margin: 0px;
     padding: 0px;
+    background: linear-gradient(180deg, #0c70f280 19.91%, #0c70f200 24.84%),var(--preto-dnc);
+    background-repeat: no-repeat;
 }
 
 #principal {
     width: 100%;
     height: 100px;
-    background-color: #303030;
+    background-color: var(--preto-dnc);
     color: #FFF;
-    font-family: 'Inter';
+    font-family: var(--font-padrao);
     font-size: 25px;
     font-weight: 600;
     line-height: normal;
@@ -24,7 +35,8 @@ body {
     }
 
         #principal div a:hover {
-            color: #cccccc;
+            color: var(--cinza-hover);
+    
         }
 
     #menu { 
@@ -36,13 +48,13 @@ body {
 
     #principal button {
         margin-right: 5%;
-        background-color: #0C70F2;
+        background-color: var(--azul-dnc);
         box-shadow: 3px 2px 4px 0px rgba(11, 112, 244, 0.251);
         border: 0px;
         height: 39px;
         width: 80px;
         color: #FFF;
-        font-family: Inter;
+        font-family: var(--font-padrao);
         font-size: 20px;
         font-style: normal;
         font-weight: 600;
@@ -53,6 +65,119 @@ body {
 
         #principal button:hover {
             transform: translateY(-7px);
-            box-shadow: 3px 2px 10px rgba(108, 166, 242, 0.893);
+            background-color: #4d9ff8;
+            box-shadow: 5px 5px 10px rgba(108, 166, 242, 0.893);
+        }
+ 
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+    header{
+        color: white;
+        font-family: var(--font-padrao);
+        text-align: center;
+        margin-bottom: 100px;
+    }
+
+        header h1 {
+            font-size: 80px;
+            font-weight: 800px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
         }
 
+        header h2 {
+            color: #FFF;
+            font-size: 40px;
+            font-weight: 500;
+        }
+
+        .invert {
+            background-color: black;
+            font-weight: bold;
+            padding: 5px;
+        }
+
+    form{
+        color: white;
+        font-family: var(--font-padrao);
+        font-size: 30px;
+        font-weight: 600px;
+        align-items: center;
+        width: 600px;
+    }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        form input{
+            border-radius: 10px;
+            background: #ffffffe6;
+            height: 35px;
+            flex-shrink: 0;
+            font-size: 20px;
+            font-weight: 400;
+            border: 0px;
+            padding: 10px;
+        }
+
+            form input::placeholder{
+                color: var(--preto-dnc);
+            }
+
+        form label {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        
+        .checkbox-itens label {
+            font-size: 25px;            
+        }
+
+        .checkbox-itens {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        input[type="checkbox"] {
+            transform: scale(1.7);
+        }
+
+        button[type="submit"] {
+            background-color: var(--azul-dnc);
+            border: 0px;
+            border-radius: 10px;
+            width: 100%;
+            height: 56px;
+            color: white;
+            font-family: var(--font-padrao);
+            margin-top: 50px;
+            padding: 10px;
+            font-size: 20px;
+            font-weight:  bold;
+            cursor: pointer;
+            text-transform: uppercase;
+            box-shadow: 3px 2px 4px 0px rgba(11, 112, 244, 0.251);
+
+        }
+
+        button:hover {
+            transform: translateY(-7px);
+            background-color: #4d9ff8;
+            box-shadow: 5px 5px 10px rgba(0, 8, 19, 0.893);
+            transition-duration: 0.7s;
+        }
+
+        
