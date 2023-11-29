@@ -10,9 +10,19 @@
 body {
     margin: 0px;
     padding: 0px;
-    background: linear-gradient(180deg, #0c70f280 19.91%, #0c70f200 24.84%),var(--preto-dnc);
+    background: linear-gradient(180deg, #0c70f280 25%, #0c70f200 40%),var(--preto-dnc);
     background-repeat: no-repeat;
 }
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+        color: var(--cinza-hover);
+
+    }
 
 #principal {
     width: 100%;
@@ -29,15 +39,7 @@ body {
     border-bottom: 1px #bababa;
 }    
 
-    #principal a {
-        color: inherit;
-        text-decoration: none;
-    }
 
-        #principal div a:hover {
-            color: var(--cinza-hover);
-    
-        }
 
     #menu { 
         display: flex;
@@ -180,4 +182,75 @@ section {
             transition-duration: 0.7s;
         }
 
-        
+footer{
+    background-color: var(--azul-dnc);
+    width: 100%;
+    font-family: var(--font-padrao);
+}
+
+    .footer-line-sup {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 25px;
+    }
+
+    footer nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 330px;
+    }
+
+    footer h5 {
+        color: #FFF;
+        text-align: center;
+        font-size: 20px;
+        font-weight: 800;
+        font-family: var(--font-padrao);
+        background-color: var(--preto-dnc);
+        border-radius: 10px;
+        padding: 10px;
+        margin-bottom: 15px;
+    }
+
+    footer ul {
+        list-style: none;
+        color: #FFF;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 600;
+        font-family: var(--font-padrao);
+
+        margin: 0px;
+        padding: 0px;
+
+    }
+
+    footer ul li {
+        text-align: center;        
+        margin: 20px 0px 20px 0px;
+    }
+
+    footer .adress {
+        color: #FFF;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 600;
+        font-family: var(--font-padrao);
+        width: 25%;
+    }
+
+    .footer-line-inf {
+        font-family: var(--font-padrao);
+        font-size: 18px;
+        font-weight: 600;
+        color: white;
+        text-align: center;
+        padding-bottom: 30px;
+    }
+
+    footer .footer-line-inf a:first-child{
+        padding-right: 5px;
+        border-right: 3px solid white;
+    }
